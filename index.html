@@ -779,10 +779,10 @@
         var searchContainer = L.DomUtil.create('div', 'search-benih-control', map.getContainer());
         searchContainer.innerHTML =
             '<select id="mode-cari">' +
-                '<option value="Nama Sumber Benih">Nama Benih</option>' +
+                '<option value="Nama Sumber Benih">Nama Sumber Benih</option>' +
                 '<option value="No Sertifikat">No Sertififikat</option>' +
             '</select>' +
-            '<input type="text" id="cari-spesies" list="daftar-spesies" placeholder="Cari nama benih...">' +
+            '<input type="text" id="cari-spesies" list="daftar-spesies" placeholder="Cari nama sumber benih...">' +
             '<datalist id="daftar-spesies"></datalist>' +
             '<button type="button" id="btn-cari-spesies">Cari</button>' +
             '<div id="hasil-cari-kosong"></div>';
@@ -805,7 +805,7 @@
                 datalistEl.appendChild(opt);
             });
         }
-        isiDatalist('Nama Benih');
+        isiDatalist('Nama Sumber Benih');
 
         document.getElementById('mode-cari').addEventListener('change', function () {
             var input = document.getElementById('cari-spesies');
@@ -815,8 +815,8 @@
                 input.placeholder = 'Cari no sertif...';
                 isiDatalist('No Sertif');
             } else {
-                input.placeholder = 'Cari nama benih...';
-                isiDatalist('Nama Benih');
+                input.placeholder = 'Cari nama sumber benih...';
+                isiDatalist('Nama  Benih');
             }
         });
 
