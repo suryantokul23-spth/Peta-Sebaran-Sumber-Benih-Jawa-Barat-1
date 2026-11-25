@@ -626,7 +626,7 @@
                         <td>' + (feature.properties['No'] !== null ? autolinker.link(String(feature.properties['No']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Nama Benih</th>\
+                        <th scope="row">Nama Sumber Benih</th>\
                         <td>' + (feature.properties['Nama Benih'] !== null ? autolinker.link(String(feature.properties['Nama Benih']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -733,7 +733,7 @@
         function tampilkanInfoPanel(properties) {
             var baris = [
                 ['No', properties['No']],
-                ['Nama Benih', properties['Nama Benih']],
+                ['Nama Sumber Benih', properties['Nama Benih']],
                 ['Nama Spesies', properties['Nama Spesi']],
                 ['Latitude', properties['Latitude']],
                 ['Longitude', properties['Longitude']],
